@@ -222,131 +222,6 @@ def _adapt_columns_for_text_dataset(dataset_path: str, dataset_type: InstructTex
         dummy_full = int(dummy_total/3600)
 
 
-        # print(f"Target ===============================")
-
-        # dummy_target_sec = dataset_hour*60*60*cst.TEXT_HOUR
-        # if dummy_target_sec < dummy_total:
-        #     config["max_steps"] = int(dummy_target_sec/dummy_cycle)
-        #     if config["max_steps"] < 1:
-        #         config["max_steps"] = 1
-                
-        #     # dummy_save = int(config["max_steps"]/(dataset_hour*2))
-        #     dummy_save = int(config["max_steps"]*0.15)
-        #     if dummy_save > 100:
-        #         dummy_save = 100
-        #     config["save_steps"] = dummy_save
-
-        #     print(f"Max steps {config['max_steps']}")
-        #     print(f"Save steps {config['save_steps']}")
-
-        #     # dummy_set = int(config['micro_batch_size']*config['gradient_accumulation_steps']*config['max_steps']*gpu_count/1/16*8)
-        #     dummy_set = int(config['micro_batch_size']*config['gradient_accumulation_steps']*config['max_steps'])
-        #     print(f"Dataset min {dummy_set}")
-
-        #     dummy_sec = cst.TEXT_COMP_SEC
-        #     # dummy_step = int(dataset_hour*60*60*cst.TEXT_HOUR*cst.TEXT_COMP_WEIGHT/dummy_sec/(config['max_steps']/cst.TEXT_COMP_STEP_DIV))
-        #     dummy_step = int(dummy_set/cst.TEXT_COMP_DIV)
-        #     if dummy_step < 2*8:
-        #         dummy_step = 2*8
-        #     print(f"Completion steps {dummy_step}")
-
-        # print(f"Target step {config['max_steps']}")
-        # print(f"Target text time {format_seconds(config['max_steps']*dummy_cycle)}")
-        # # print(f"Target config {config}")
-
-
-        # if gpu_count > 1:
-        #     print(f"Target multigpu ===============================")
-
-        #     config['max_steps'] = config['max_steps']*(gpu_count+1)
-
-        #     # dummy_save = int(config["max_steps"]/(dataset_hour*2))
-        #     dummy_save = int(config["max_steps"]*0.15)
-        #     if dummy_save > 100:
-        #         dummy_save = 100
-        #     config["save_steps"] = dummy_save
-
-        #     print(f"Max steps {config['max_steps']}")
-        #     print(f"Save steps {config['save_steps']}")
-
-        #     # dummy_set = int(config['micro_batch_size']*config['gradient_accumulation_steps']*config['max_steps']*gpu_count/1/16*8)
-        #     dummy_set = int(config['micro_batch_size']*config['gradient_accumulation_steps']*config['max_steps'])
-        #     print(f"Dataset min {dummy_set}")
-
-        #     dummy_sec = cst.TEXT_COMP_SEC
-        #     # dummy_step = int(dataset_hour*60*60*cst.TEXT_HOUR*cst.TEXT_COMP_WEIGHT/dummy_sec/(config['max_steps']/cst.TEXT_COMP_STEP_DIV))
-        #     dummy_step = int(dummy_set/cst.TEXT_COMP_DIV)
-        #     if dummy_step < 2*8:
-        #         dummy_step = 2*8
-        #     print(f"Completion steps {dummy_step}")
-
-        #     print(f"Target step multigpu {config['max_steps']}")
-        #     print(f"Target text multigpu time {format_seconds(config['max_steps']*dummy_cycle)}")
-        #     # print(f"Target config {config}")
-        #     dummy_multi = int(config['max_steps']*dummy_cycle/3600)
-
-
-        # print(f"Flash ===============================")
-
-        # # dummy_flash = dataset_hour*cst.TEXT_HOUR
-        # dummy_flash = dataset_hour*dummy_full/dummy_multi
-        # if dummy_full < dummy_multi:
-        #     dummy_flash = dataset_hour*1
-        # # if dummy_flash < 24:
-        # #     dummy_flash = 24
-
-        # # config["max_steps"] = int(config["max_steps"]/(config['max_steps']*dummy_cycle/3600)*dummy_flash)*3
-        # config["max_steps"] = int(dummy_full_step*(dataset_hour/dummy_full))
-        # if config["max_steps"] > dummy_full_step:
-        #     config["max_steps"] = dummy_full_step
-
-        # # dummy_save = int(config["max_steps"]/(dataset_hour*2))
-        # dummy_save = int(config["max_steps"]*0.15)
-        # config["save_steps"] = dummy_save
-        # # config["max_steps"] = 3
-        # if config["save_steps"] < 20:
-        #     config["save_steps"] = 20
-
-        # print(f"Flash step {config['max_steps']}")
-        # print(f"Save step {config['save_steps']}")
-        # # print(f"Flash config {config}")
-
-        # # dummy_set = int(config['micro_batch_size']*config['gradient_accumulation_steps']*config['max_steps']*gpu_count/1/16*1)
-        # dummy_set = int(config['micro_batch_size']*config['gradient_accumulation_steps']*config['max_steps'])
-        # print(f"Dataset min {dummy_set}")
-
-
-        # print(f"Final ===============================")
-
-        # config["max_steps"] = int(dummy_full_step*cst.TEXT_HOUR)
-        # # config["max_steps"] = 3
-        # # if config["max_steps"] > dummy_full_step:
-        # #     config["max_steps"] = dummy_full_step
-
-        # # dummy_save = int(config["max_steps"]/(dataset_hour*2))
-        # dummy_save = int(config["max_steps"]*0.15)
-        # config["save_steps"] = dummy_save
-        # if config["save_steps"] < 20:
-        #     config["save_steps"] = 20
-
-        # dummy_warmup = int(config["max_steps"]*0.25)
-        # config["warmup_steps"] = dummy_warmup
-        # if config["warmup_steps"] < 20:
-        #     config["warmup_steps"] = 20
-
-        # print(f"Final step {config['max_steps']}")
-        # print(f"Save step {config['save_steps']}")
-        # print(f"Warm step {config['warmup_steps']}")
-        # # print(f"Flash config {config}")
-
-        # # dummy_set = int(config['micro_batch_size']*config['gradient_accumulation_steps']*config['max_steps']*gpu_count/1/16*1)
-        # dummy_set = int(config['micro_batch_size']*config['gradient_accumulation_steps']*config['max_steps'])
-        # print(f"Dataset min {dummy_set}")
-
-
-        # # save_config(config, config_path)
-
-
     except Exception as e:
         df = pd.DataFrame(data)
         print(f"Failed to count dataset: {str(e)}")
@@ -474,131 +349,6 @@ def _adapt_columns_for_dpo_dataset(dataset_path: str, dataset_type: DpoDatasetTy
         print(f"Full dpo time {format_seconds(dummy_total)}")
         # print(f"Full config {config}")
         dummy_full = int(dummy_total/3600)
-
-
-        # print(f"Target ===============================")
-
-        # dummy_target_sec = dataset_hour*60*60*cst.DPO_HOUR
-        # if dummy_target_sec < dummy_total:
-        #     config["max_steps"] = int(dummy_target_sec/dummy_cycle)
-        #     if config["max_steps"] < 1:
-        #         config["max_steps"] = 1
-                
-        #     # dummy_save = int(config["max_steps"]/(dataset_hour*2))
-        #     dummy_save = int(config["max_steps"]*0.15)
-        #     if dummy_save > 100:
-        #         dummy_save = 100
-        #     config["save_steps"] = dummy_save
-
-        #     print(f"Max steps {config['max_steps']}")
-        #     print(f"Save steps {config['save_steps']}")
-
-        #     # dummy_set = int(config['micro_batch_size']*config['gradient_accumulation_steps']*config['max_steps']*gpu_count/1/16*2)
-        #     dummy_set = int(config['micro_batch_size']*config['gradient_accumulation_steps']*config['max_steps'])
-        #     print(f"Dataset min {dummy_set}")
-
-        #     dummy_sec = cst.DPO_COMP_SEC
-        #     # dummy_step = int(dataset_hour*60*60*cst.DPO_HOUR*cst.DPO_COMP_WEIGHT/dummy_sec/(config['max_steps']/cst.DPO_COMP_STEP_DIV))
-        #     dummy_step = int(dummy_set/cst.DPO_COMP_DIV)
-        #     if dummy_step < 2*2:
-        #         dummy_step = 2*2
-        #     print(f"Completion steps {dummy_step}")
-
-        # print(f"Target step {config['max_steps']}")
-        # print(f"Target dpo time {format_seconds(config['max_steps']*dummy_cycle)}")
-        # # print(f"Target config {config}")
-
-
-        # if gpu_count > 1:
-        #     print(f"Target multigpu ===============================")
-
-        #     config['max_steps'] = config['max_steps']*(gpu_count+1)
-
-        #     # dummy_save = int(config["max_steps"]/(dataset_hour*2))
-        #     dummy_save = int(config["max_steps"]*0.15)
-        #     if dummy_save > 100:
-        #         dummy_save = 100
-        #     config["save_steps"] = dummy_save
-
-        #     print(f"Max steps {config['max_steps']}")
-        #     print(f"Save steps {config['save_steps']}")
-
-        #     # dummy_set = int(config['micro_batch_size']*config['gradient_accumulation_steps']*config['max_steps']*gpu_count/1/16*2)
-        #     dummy_set = int(config['micro_batch_size']*config['gradient_accumulation_steps']*config['max_steps'])
-        #     print(f"Dataset min {dummy_set}")
-
-        #     dummy_sec = cst.DPO_COMP_SEC
-        #     # dummy_step = int(dataset_hour*60*60*cst.DPO_HOUR*cst.DPO_COMP_WEIGHT/dummy_sec/(config['max_steps']/cst.DPO_COMP_STEP_DIV))
-        #     dummy_step = int(dummy_set/cst.DPO_COMP_DIV)
-        #     if dummy_step < 2*2:
-        #         dummy_step = 2*2
-        #     print(f"Completion steps {dummy_step}")
-
-        #     print(f"Target step multigpu {config['max_steps']}")
-        #     print(f"Target dpo multigpu time {format_seconds(config['max_steps']*dummy_cycle)}")
-        #     # print(f"Target config {config}")
-        #     dummy_multi = int(config['max_steps']*dummy_cycle/3600)
-
-
-        # print(f"Flash ===============================")
-
-        # # dummy_flash = dataset_hour*cst.DPO_HOUR
-        # dummy_flash = dataset_hour*dummy_full/dummy_multi
-        # if dummy_full < dummy_multi:
-        #     dummy_flash = dataset_hour*1
-        # # if dummy_flash < 16:
-        # #     dummy_flash = 16
-
-        # # config["max_steps"] = int(config["max_steps"]/(config['max_steps']*dummy_cycle/3600)*dummy_flash)*3
-        # config["max_steps"] = int(dummy_full_step*(dataset_hour/dummy_full))
-        # if config["max_steps"] > dummy_full_step:
-        #     config["max_steps"] = dummy_full_step
-
-        # # dummy_save = int(config["max_steps"]/(dataset_hour*2))
-        # dummy_save = int(config["max_steps"]*0.15)
-        # config["save_steps"] = dummy_save
-        # # config["max_steps"] = 3
-        # if config["save_steps"] < 20:
-        #     config["save_steps"] = 20
-
-        # print(f"Flash step {config['max_steps']}")
-        # print(f"Save step {config['save_steps']}")
-        # # print(f"Flash config {config}")
-
-        # # dummy_set = int(config['micro_batch_size']*config['gradient_accumulation_steps']*config['max_steps']*gpu_count/1/16*1)
-        # dummy_set = int(config['micro_batch_size']*config['gradient_accumulation_steps']*config['max_steps'])
-        # print(f"Dataset min {dummy_set}")
-
-
-        # print(f"Final ===============================")
-
-        # config["max_steps"] = int(dummy_full_step*cst.DPO_HOUR)
-        # # config["max_steps"] = 3
-        # # if config["max_steps"] > dummy_full_step:
-        # #     config["max_steps"] = dummy_full_step
-
-        # # dummy_save = int(config["max_steps"]/(dataset_hour*2))
-        # dummy_save = int(config["max_steps"]*0.15)
-        # config["save_steps"] = dummy_save
-        # if config["save_steps"] < 20:
-        #     config["save_steps"] = 20
-
-        # dummy_warmup = int(config["max_steps"]*0.25)
-        # config["warmup_steps"] = dummy_warmup
-        # if config["warmup_steps"] < 20:
-        #     config["warmup_steps"] = 20
-
-        # print(f"Final step {config['max_steps']}")
-        # print(f"Save step {config['save_steps']}")
-        # print(f"Warm step {config['warmup_steps']}")
-        # # print(f"Flash config {config}")
-
-        # # dummy_set = int(config['micro_batch_size']*config['gradient_accumulation_steps']*config['max_steps']*gpu_count/1/16*1)
-        # dummy_set = int(config['micro_batch_size']*config['gradient_accumulation_steps']*config['max_steps'])
-        # print(f"Dataset min {dummy_set}")
-
-
-        # # save_config(config, config_path)
 
 
     except Exception as e:
@@ -731,133 +481,6 @@ def _adapt_columns_for_grpo_dataset(dataset_path: str, dataset_type: GrpoDataset
         dummy_full = int(dummy_total/3600)
 
 
-        # print(f"Target ===============================")
-
-        # dummy_target_sec = dataset_hour*60*60*cst.GRPO_HOUR
-        # if dummy_target_sec < dummy_total:
-        #     config["max_steps"] = int(dummy_target_sec/dummy_cycle)
-        #     if config["max_steps"] < 1:
-        #         config["max_steps"] = 1
-                
-        #     # dummy_save = int(config["max_steps"]/(dataset_hour*2))
-        #     dummy_save = int(config["max_steps"]*0.15)
-        #     if dummy_save > 100:
-        #         dummy_save = 100
-        #     config["save_steps"] = dummy_save
-
-        #     print(f"Max steps {config['max_steps']}")
-        #     print(f"Save steps {config['save_steps']}")
-
-        #     # dummy_set = int(config['micro_batch_size']*config['gradient_accumulation_steps']*config['max_steps']*gpu_count/1/16*1)
-        #     dummy_set = int(config['micro_batch_size']*config['gradient_accumulation_steps']*config['max_steps'])
-        #     print(f"Dataset min {dummy_set}")
-
-        #     # dummy_sec = cst.GRPO_COMP_SEC
-        #     # # dummy_step = int(dataset_hour*60*60*cst.GRPO_HOUR*cst.GRPO_COMP_WEIGHT/dummy_sec/(config['max_steps']/cst.GRPO_COMP_STEP_DIV))
-        #     # dummy_step = int(dummy_set/cst.GRPO_COMP_DIV)
-        #     # if dummy_step < 2*1:
-        #     #     dummy_step = 2*1
-        #     dummy_step = 8
-        #     print(f"Completion steps {dummy_step}")
-
-        # print(f"Target step {config['max_steps']}")
-        # print(f"Target grpo time {format_seconds(config['max_steps']*dummy_cycle)}")
-        # # print(f"Target config {config}")
-
-
-        # if gpu_count > 1:
-        #     print(f"Target multigpu ===============================")
-
-        #     config['max_steps'] = config['max_steps']*(gpu_count+1)
-
-        #     # dummy_save = int(config["max_steps"]/(dataset_hour*2))
-        #     dummy_save = int(config["max_steps"]*0.15)
-        #     if dummy_save > 100:
-        #         dummy_save = 100
-        #     config["save_steps"] = dummy_save
-
-        #     print(f"Max steps {config['max_steps']}")
-        #     print(f"Save steps {config['save_steps']}")
-
-        #     # dummy_set = int(config['micro_batch_size']*config['gradient_accumulation_steps']*config['max_steps']*gpu_count/1/16*1)
-        #     dummy_set = int(config['micro_batch_size']*config['gradient_accumulation_steps']*config['max_steps'])
-        #     print(f"Dataset min {dummy_set}")
-
-        #     # dummy_sec = cst.GRPO_COMP_SEC
-        #     # # dummy_step = int(dataset_hour*60*60*cst.GRPO_HOUR*cst.GRPO_COMP_WEIGHT/dummy_sec/(config['max_steps']/cst.GRPO_COMP_STEP_DIV))
-        #     # dummy_step = int(dummy_set/cst.GRPO_COMP_DIV)
-        #     # if dummy_step < 2*1:
-        #     #     dummy_step = 2*1
-        #     dummy_step = 8
-        #     print(f"Completion steps {dummy_step}")
-
-        #     print(f"Target step multigpu {config['max_steps']}")
-        #     print(f"Target grpo multigpu time {format_seconds(config['max_steps']*dummy_cycle)}")
-        #     # print(f"Target config {config}")
-        #     dummy_multi = int(config['max_steps']*dummy_cycle/3600)
-
-
-        # print(f"Flash ===============================")
-
-        # # dummy_flash = dataset_hour*cst.GRPO_HOUR
-        # dummy_flash = dataset_hour*dummy_full/dummy_multi
-        # if dummy_full < dummy_multi:
-        #     dummy_flash = dataset_hour*1
-        # # if dummy_flash < 8:
-        # #     dummy_flash = 8
-
-        # # config["max_steps"] = int(config["max_steps"]/(config['max_steps']*dummy_cycle/3600)*dummy_flash)*3
-        # config["max_steps"] = int(dummy_full_step*(dataset_hour/dummy_full))
-        # if config["max_steps"] > dummy_full_step:
-        #     config["max_steps"] = dummy_full_step
-
-        # # dummy_save = int(config["max_steps"]/(dataset_hour*2))
-        # dummy_save = int(config["max_steps"]*0.15)
-        # config["save_steps"] = dummy_save
-        # # config["max_steps"] = 3
-        # if config["save_steps"] < 15:
-        #     config["save_steps"] = 15
-
-        # print(f"Flash step {config['max_steps']}")
-        # print(f"Save step {config['save_steps']}")
-        # # print(f"Flash config {config}")
-
-        # # dummy_set = int(config['micro_batch_size']*config['gradient_accumulation_steps']*config['max_steps']*gpu_count/1/16*1)
-        # dummy_set = int(config['micro_batch_size']*config['gradient_accumulation_steps']*config['max_steps'])
-        # print(f"Dataset min {dummy_set}")
-
-
-        # print(f"Final ===============================")
-
-        # config["max_steps"] = int(dummy_full_step*cst.GRPO_HOUR)
-        # # config["max_steps"] = 3
-        # # if config["max_steps"] > dummy_full_step:
-        # #     config["max_steps"] = dummy_full_step
-
-        # # dummy_save = int(config["max_steps"]/(dataset_hour*2))
-        # dummy_save = int(config["max_steps"]*0.15)
-        # config["save_steps"] = dummy_save
-        # if config["save_steps"] < 20:
-        #     config["save_steps"] = 20
-
-        # dummy_warmup = int(config["max_steps"]*0.25)
-        # config["warmup_steps"] = dummy_warmup
-        # if config["warmup_steps"] < 20:
-        #     config["warmup_steps"] = 20
-
-        # print(f"Final step {config['max_steps']}")
-        # print(f"Save step {config['save_steps']}")
-        # print(f"Warm step {config['warmup_steps']}")
-        # # print(f"Flash config {config}")
-
-        # # dummy_set = int(config['micro_batch_size']*config['gradient_accumulation_steps']*config['max_steps']*gpu_count/1/16*1)
-        # dummy_set = int(config['micro_batch_size']*config['gradient_accumulation_steps']*config['max_steps'])
-        # print(f"Dataset min {dummy_set}")
-
-
-        # # save_config(config, config_path)
-
-
     except Exception as e:
         df = pd.DataFrame(data)
         print(f"Failed to count dataset: {str(e)}")
@@ -985,131 +608,6 @@ def _adapt_columns_for_chat_dataset(dataset_path: str, dataset_type: ChatTemplat
         print(f"Full text time {format_seconds(dummy_total)}")
         # print(f"Full config {config}")
         dummy_full = int(dummy_total/3600)
-
-
-        # print(f"Target ===============================")
-
-        # dummy_target_sec = dataset_hour*60*60*cst.CHAT__HOUR
-        # if dummy_target_sec < dummy_total:
-        #     config["max_steps"] = int(dummy_target_sec/dummy_cycle)
-        #     if config["max_steps"] < 1:
-        #         config["max_steps"] = 1
-                
-        #     # dummy_save = int(config["max_steps"]/(dataset_hour*2))
-        #     dummy_save = int(config["max_steps"]*0.15)
-        #     if dummy_save > 100:
-        #         dummy_save = 100
-        #     config["save_steps"] = dummy_save
-
-        #     print(f"Max steps {config['max_steps']}")
-        #     print(f"Save steps {config['save_steps']}")
-
-        #     # dummy_set = int(config['micro_batch_size']*config['gradient_accumulation_steps']*config['max_steps']*gpu_count/1/16*8)
-        #     dummy_set = int(config['micro_batch_size']*config['gradient_accumulation_steps']*config['max_steps'])
-        #     print(f"Dataset min {dummy_set}")
-
-        #     dummy_sec = cst.CHAT__COMP_SEC
-        #     # dummy_step = int(dataset_hour*60*60*cst.CHAT__HOUR*cst.CHAT__COMP_WEIGHT/dummy_sec/(config['max_steps']/cst.CHAT__COMP_STEP_DIV))
-        #     dummy_step = int(dummy_set/cst.CHAT__COMP_DIV)
-        #     if dummy_step < 2*8:
-        #         dummy_step = 2*8
-        #     print(f"Completion steps {dummy_step}")
-
-        # print(f"Target step {config['max_steps']}")
-        # print(f"Target text time {format_seconds(config['max_steps']*dummy_cycle)}")
-        # # print(f"Target config {config}")
-
-
-        # if gpu_count > 1:
-        #     print(f"Target multigpu ===============================")
-
-        #     config['max_steps'] = config['max_steps']*(gpu_count+1)
-
-        #     # dummy_save = int(config["max_steps"]/(dataset_hour*2))
-        #     dummy_save = int(config["max_steps"]*0.15)
-        #     if dummy_save > 100:
-        #         dummy_save = 100
-        #     config["save_steps"] = dummy_save
-
-        #     print(f"Max steps {config['max_steps']}")
-        #     print(f"Save steps {config['save_steps']}")
-
-        #     # dummy_set = int(config['micro_batch_size']*config['gradient_accumulation_steps']*config['max_steps']*gpu_count/1/16*8)
-        #     dummy_set = int(config['micro_batch_size']*config['gradient_accumulation_steps']*config['max_steps'])
-        #     print(f"Dataset min {dummy_set}")
-
-        #     dummy_sec = cst.CHAT__COMP_SEC
-        #     # dummy_step = int(dataset_hour*60*60*cst.CHAT__HOUR*cst.CHAT__COMP_WEIGHT/dummy_sec/(config['max_steps']/cst.CHAT__COMP_STEP_DIV))
-        #     dummy_step = int(dummy_set/cst.CHAT__COMP_DIV)
-        #     if dummy_step < 2*8:
-        #         dummy_step = 2*8
-        #     print(f"Completion steps {dummy_step}")
-
-        #     print(f"Target step multigpu {config['max_steps']}")
-        #     print(f"Target text multigpu time {format_seconds(config['max_steps']*dummy_cycle)}")
-        #     # print(f"Target config {config}")
-        #     dummy_multi = int(config['max_steps']*dummy_cycle/3600)
-
-
-        # print(f"Flash ===============================")
-
-        # # dummy_flash = dataset_hour*cst.CHAT__HOUR
-        # dummy_flash = dataset_hour*dummy_full/dummy_multi
-        # if dummy_full < dummy_multi:
-        #     dummy_flash = dataset_hour*1
-        # # if dummy_flash < 24:
-        # #     dummy_flash = 24
-
-        # # config["max_steps"] = int(config["max_steps"]/(config['max_steps']*dummy_cycle/3600)*dummy_flash)*3
-        # config["max_steps"] = int(dummy_full_step*(dataset_hour/dummy_full))
-        # if config["max_steps"] > dummy_full_step:
-        #     config["max_steps"] = dummy_full_step
-
-        # # dummy_save = int(config["max_steps"]/(dataset_hour*2))
-        # dummy_save = int(config["max_steps"]*0.15)
-        # config["save_steps"] = dummy_save
-        # # config["max_steps"] = 3
-        # if config["save_steps"] < 20:
-        #     config["save_steps"] = 20
-
-        # print(f"Flash step {config['max_steps']}")
-        # print(f"Save step {config['save_steps']}")
-        # # print(f"Flash config {config}")
-
-        # # dummy_set = int(config['micro_batch_size']*config['gradient_accumulation_steps']*config['max_steps']*gpu_count/1/16*1)
-        # dummy_set = int(config['micro_batch_size']*config['gradient_accumulation_steps']*config['max_steps'])
-        # print(f"Dataset min {dummy_set}")
-
-
-        # print(f"Final ===============================")
-
-        # config["max_steps"] = int(dummy_full_step*cst.CHAT__HOUR)
-        # # config["max_steps"] = 3
-        # # if config["max_steps"] > dummy_full_step:
-        # #     config["max_steps"] = dummy_full_step
-
-        # # dummy_save = int(config["max_steps"]/(dataset_hour*2))
-        # dummy_save = int(config["max_steps"]*0.15)
-        # config["save_steps"] = dummy_save
-        # if config["save_steps"] < 20:
-        #     config["save_steps"] = 20
-
-        # dummy_warmup = int(config["max_steps"]*0.25)
-        # config["warmup_steps"] = dummy_warmup
-        # if config["warmup_steps"] < 20:
-        #     config["warmup_steps"] = 20
-
-        # print(f"Final step {config['max_steps']}")
-        # print(f"Save step {config['save_steps']}")
-        # print(f"Warm step {config['warmup_steps']}")
-        # # print(f"Flash config {config}")
-
-        # # dummy_set = int(config['micro_batch_size']*config['gradient_accumulation_steps']*config['max_steps']*gpu_count/1/16*1)
-        # dummy_set = int(config['micro_batch_size']*config['gradient_accumulation_steps']*config['max_steps'])
-        # print(f"Dataset min {dummy_set}")
-
-
-        # # save_config(config, config_path)
 
 
     except Exception as e:
@@ -1339,50 +837,50 @@ def get_custom_text_config(param_nums: int):
             "batch_size": 100,
         },
         "2_4_b": {
-            "learning_rate": 8e-5,
+            "learning_rate": 7.5e-5,
             "distributed": "ddp",
             "gpu_count": 1,
             "batch_size": 48,
         },
         "4_5_b": {
-            "learning_rate": 6e-5,
+            "learning_rate": 7e-5,
             "distributed": "ddp",
             "gpu_count": 2,
             "batch_size": 40,
         },
         "5_9_b": {
-            "learning_rate": 4e-5,
+            "learning_rate": 5e-5,
             "distributed": "ddp",
             "gpu_count": 2,
-            "batch_size": 30,
+            "batch_size": 28,
         },
         "9_12_b": {
-            "learning_rate": 0.00015,
+            "learning_rate": 1e-4,
             "distributed": "ddp",
             "gpu_count": 2,
             "use_lora": True,
             "batch_size": 32,
         },
         "12_15_b": {
-            "learning_rate": 0.0001,
-            "distributed": "ddp",
+            "learning_rate": 1e-4,
+            "distributed": distributed,
             "gpu_count": 4,
             "use_lora": True,
-            "batch_size": 20,
+            "batch_size": 30,
         },
         "15_40_b": {
             "learning_rate": 8e-5,
             "distributed": distributed,
             "gpu_count": 4,
             "use_lora": True,
-            "batch_size": 10,
+            "batch_size": 18,
         },
         "40_80_b": {
-            "learning_rate": 6e-5,
+            "learning_rate": 8e-5,
             "distributed": distributed,
             "gpu_count": 8,
             "use_lora": True,
-            "batch_size": 6,
+            "batch_size": 8,
         }        
     }
 
@@ -1390,23 +888,23 @@ def get_custom_text_config(param_nums: int):
         TEXT_CONFIG[key]["label"] = key
 
     if param_nums < 1_000_000_000:
-        return TEXT_CONFIG["0_1_b"]
+        result = TEXT_CONFIG["0_1_b"]
     elif param_nums < 2_000_000_000:
-        return TEXT_CONFIG["1_2_b"]
+        result = TEXT_CONFIG["1_2_b"]
     elif param_nums < 4_000_000_000:
-        return TEXT_CONFIG["2_4_b"]
+        result = TEXT_CONFIG["2_4_b"]
     elif param_nums < 5_000_000_000:
-        return TEXT_CONFIG["4_5_b"]
+        result = TEXT_CONFIG["4_5_b"]
     elif param_nums < 9_000_000_000:
-        return TEXT_CONFIG["5_9_b"]
+        result = TEXT_CONFIG["5_9_b"]
     elif param_nums < 12_000_000_000:
-        return TEXT_CONFIG["9_12_b"]
+        result = TEXT_CONFIG["9_12_b"]
     elif param_nums < 15_000_000_000:  
-        return TEXT_CONFIG["12_15_b"]
+        result = TEXT_CONFIG["12_15_b"]
     elif param_nums < 35_000_000_000:
-        return TEXT_CONFIG["15_40_b"]
+        result = TEXT_CONFIG["15_40_b"]
     elif param_nums < 80_000_000_000:
-        return TEXT_CONFIG["40_80_b"]
+        result = TEXT_CONFIG["40_80_b"]
     else:
         print(f"Model size {param_nums} is not supported")
         return {
@@ -1427,65 +925,77 @@ def get_custom_dpo_config(param_nums: int):
 
     DPO_CONFIG = {
         "0_1_b": {
-            "learning_rate": 1e-5,
+            "learning_rate": 1.35e-5,
             "distributed": "ddp",
             "gpu_count": 1,
             "batch_size": 16,
         },
         "1_2_b": {
-            "learning_rate": 1e-5,
+            "learning_rate": 8.7e-6,
             "distributed": "ddp",
             "gpu_count": 1,
-            "batch_size": 10,
+            "batch_size": 12,
         },
         "2_4_b": {
-            "learning_rate": 1e-5,
+            "learning_rate": 6.5e-6,
             "distributed": "ddp",
-            "gpu_count": 1,
-            "batch_size": 4,
+            "gpu_count": 2,
+            "batch_size": 12,
             "use_lora": True
         },
         "4_5_b": {
-            "learning_rate": 1e-5,
+            "learning_rate": 6.25e-6,
             "distributed": "ddp",
             "gpu_count": 2,
-            "batch_size": 4,
+            "batch_size": 12,
             "use_lora": True
         },
         "5_9_b": {
-            "learning_rate": 1e-5,
+            "learning_rate": 7.5e-6,
             "distributed": "ddp",
-            "gpu_count": 2,
-            "batch_size": 4,
+            "gpu_count": 4,
+            "batch_size": 8,
             "use_lora": True
         },
         "9_12_b": {
-            "learning_rate": 8e-6,
-            "distributed": distributed,
-            "gpu_count": 2,
-            "use_lora": True,
-            "batch_size": 4,
-        },
-        "12_15_b": {
-            "learning_rate": 8e-6,
+            "learning_rate": 5e-6,
             "distributed": distributed,
             "gpu_count": 4,
             "use_lora": True,
-            "batch_size": 4,
+            "batch_size": 32,
+            "gradient_checkpointing": False
+        },
+        "12_14_b": {
+            "learning_rate": 8.5e-6,
+            "distributed": distributed,
+            "gpu_count": 4,
+            "use_lora": True,
+            "batch_size": 24,
+            "gradient_checkpointing": False
+        },
+        "14_15_b": {
+            "learning_rate": 8.5e-6,
+            "distributed": distributed,
+            "gpu_count": 8,
+            "use_lora": True,
+            "batch_size": 18,
+            "gradient_checkpointing": False
         },
         "15_40_b": {
             "learning_rate": 8e-6,
             "distributed": distributed,
-            "gpu_count": 4,
+            "gpu_count": 8,
             "use_lora": True,
-            "batch_size": 2,
+            "batch_size": 16,
+            "gradient_checkpointing": False
         },
         "40_80_b": {
             "learning_rate": 8e-6,
             "distributed": distributed,
             "gpu_count": 8,
             "use_lora": True,
-            "batch_size": 2,
+            "batch_size": 8,
+            "gradient_checkpointing": False
         }        
     }
 
@@ -1504,8 +1014,10 @@ def get_custom_dpo_config(param_nums: int):
         return DPO_CONFIG["5_9_b"]
     elif param_nums < 12_000_000_000:
         return DPO_CONFIG["9_12_b"]
+    elif param_nums < 14_000_000_000:
+        result = DPO_CONFIG["12_14_b"]
     elif param_nums < 15_000_000_000:  
-        return DPO_CONFIG["12_15_b"]
+        result = DPO_CONFIG["14_15_b"]
     elif param_nums < 35_000_000_000:
         return DPO_CONFIG["15_40_b"]
     elif param_nums < 80_000_000_000:
@@ -1533,63 +1045,93 @@ def get_custom_grpo_config(param_nums: int):
             "learning_rate": 0.0002,
             "distributed": "ddp",
             "gpu_count": 1,
-            "batch_size": 8,
+            "batch_size": 40,
+            "vllm_gpu_memory_utilization": 0.4
         },
         "1_2_b": {
-            "learning_rate": 0.0002,
+            "learning_rate": 9.9e-5,
             "distributed": "ddp",
             "gpu_count": 1,
-            "batch_size": 10,
+            "batch_size": 40,
+            "vllm_gpu_memory_utilization": 0.4
         },
         "2_4_b": {
-            "learning_rate": 0.0002,
+            "learning_rate": 8e-5,
             "distributed": "ddp",
-            "gpu_count": 1,
-            "batch_size": 8,
+            "gpu_count": 2,
+            "batch_size": 42,
+            "vllm_gpu_memory_utilization": 0.35,
             "use_lora": True
         },
         "4_5_b": {
-            "learning_rate": 0.0002,
+            "learning_rate": 8e-5,
             "distributed": "ddp",
             "gpu_count": 2,
-            "batch_size": 8,
-            "use_lora": True
+            "batch_size": 42,
+            "use_lora": True,
+            "vllm_gpu_memory_utilization": 0.4
         },
-        "5_9_b": {
-            "learning_rate": 0.0002,
+        "5_6_b": {
+            "learning_rate": 6e-5,
             "distributed": "ddp",
             "gpu_count": 2,
-            "batch_size": 4,
-            "use_lora": True
+            "batch_size": 42,
+            "use_lora": True,
+            "vllm_gpu_memory_utilization": 0.4
+        },
+        "6_9_b": {
+            "learning_rate": 6e-5,
+            "distributed": "ddp",
+            "gpu_count": 4,
+            "batch_size": 24,
+            "use_lora": True,
+            "vllm_gpu_memory_utilization": 0.5
         },
         "9_12_b": {
-            "learning_rate": 0.0002,
+            "learning_rate": 6.5e-5,   
             "distributed": "ddp",
-            "gpu_count": 2,
+            "gpu_count": 4,
             "use_lora": True,
-            "batch_size": 4,
+            "batch_size": 16,
+            "vllm_gpu_memory_utilization": 0.6
         },
         "12_15_b": {
-            "learning_rate": 0.0002,
+            "learning_rate": 8e-5,
             "distributed": "ddp",
             "gpu_count": 4,
             "use_lora": True,
             "batch_size": 2,
+            "vllm_gpu_memory_utilization": 0.8,
         },
-        "15_40_b": {
-            "learning_rate": 0.0002,
-            "distributed": distributed,
+        "15_20_b": {
+            "learning_rate": 8e-5,
+            "distributed": "ddp",
             "gpu_count": 4,
             "use_lora": True,
-            "batch_size": 1,
+            "batch_size": 16,
+            "vllm_gpu_memory_utilization": 0.6,
+            "use_vllm": False,
         },
-        "40_80_b": {
-            "learning_rate": 0.0002,
-            "distributed": distributed,
+        "20_40_b": {
+            "learning_rate": 8e-5,
+            "distributed": "ddp",
             "gpu_count": 8,
             "use_lora": True,
-            "batch_size": 1,
-        }        
+            "batch_size": 16,
+            "vllm_gpu_memory_utilization": 0.6,
+            "use_vllm": False,
+            "use_4bit": True
+        },
+        "40_80_b": {
+            "learning_rate": 8e-5,
+            "distributed": "ddp",
+            "gpu_count": 8,
+            "use_lora": True,
+            "batch_size": 2,
+            "vllm_gpu_memory_utilization": 0.7,
+            "use_vllm": False,
+            "use_4bit": True
+        }
     }
 
     for key in GRPO_CONFIG:
@@ -1603,14 +1145,18 @@ def get_custom_grpo_config(param_nums: int):
         return GRPO_CONFIG["2_4_b"]
     elif param_nums < 5_000_000_000:
         return GRPO_CONFIG["4_5_b"]
+    elif param_nums < 6_000_000_000:
+        return GRPO_CONFIG["5_6_b"]
     elif param_nums < 9_000_000_000:
-        return GRPO_CONFIG["5_9_b"]
+        return GRPO_CONFIG["6_9_b"]
     elif param_nums < 12_000_000_000:
         return GRPO_CONFIG["9_12_b"]
     elif param_nums < 15_000_000_000:  
         return GRPO_CONFIG["12_15_b"]
-    elif param_nums < 35_000_000_000:
-        return GRPO_CONFIG["15_40_b"]
+    elif param_nums < 20_000_000_000:
+        return GRPO_CONFIG["15_20_b"]
+    elif param_nums < 40_000_000_000:
+        return GRPO_CONFIG["20_40_b"]
     elif param_nums < 80_000_000_000:
         return GRPO_CONFIG["40_80_b"]
     else:
@@ -2597,12 +2143,13 @@ async def main():
         sys.exit(f"Error creating dataset type object: {e}")
 
     dataset_path = train_paths.get_text_dataset_path(args.task_id)
+
+    dataset_path = copy_dataset_to_axolotl_directories(dataset_path)
+
     if args.task_type == TaskType.DPOTASK.value:
         adapt_columns_for_dpo_dataset(dataset_path, dataset_type, apply_formatting=True)
     elif args.task_type == TaskType.GRPOTASK.value:
         adapt_columns_for_grpo_dataset(dataset_path, dataset_type)
-
-    dataset_path = copy_dataset_to_axolotl_directories(dataset_path)
 
     output_dir = train_paths.get_checkpoints_output_path(args.task_id, args.expected_repo_name)
     if not os.path.exists(output_dir):
