@@ -1,0 +1,1580 @@
+[
+  {
+    "model_name": "EleutherAI/gpt-neo-125m",
+    "trainable_params": 1327104,
+    "all_params": 126525696,
+    "trainable_percent": 1.0489
+  },
+  {
+    "model_name": "facebook/opt-125m",
+    "trainable_params": 1327104,
+    "all_params": 126566400,
+    "trainable_percent": 1.0485
+  },
+  {
+    "model_name": "unsloth/SmolLM-135M",
+    "trainable_params": 2442240,
+    "all_params": 136957248,
+    "trainable_percent": 1.7832
+  },
+  {
+    "model_name": "unsloth/SmolLM-135M-Instruct",
+    "trainable_params": 2442240,
+    "all_params": 136957248,
+    "trainable_percent": 1.7832
+  },
+  {
+    "model_name": "unsloth/SmolLM2-135M",
+    "trainable_params": 2442240,
+    "all_params": 136957824,
+    "trainable_percent": 1.7832
+  },
+  {
+    "model_name": "EleutherAI/pythia-160m",
+    "trainable_params": 1179648,
+    "all_params": 163502592,
+    "trainable_percent": 0.7215
+  },
+  {
+    "model_name": "JackFram/llama-160m",
+    "trainable_params": 1695744,
+    "all_params": 164113152,
+    "trainable_percent": 1.0333
+  },
+  {
+    "model_name": "TitanML/tiny-mixtral",
+    "trainable_params": 642579,
+    "all_params": 214193152,
+    "trainable_percent": 0.0029999978710803974
+  },
+  {
+    "model_name": "facebook/opt-350m",
+    "trainable_params": 3563520,
+    "all_params": 334759936,
+    "trainable_percent": 1.0645
+  },
+  {
+    "model_name": "unsloth/SmolLM-360M",
+    "trainable_params": 1085463,
+    "all_params": 361821120,
+    "trainable_percent": 0.0029999990050332053
+  },
+  {
+    "model_name": "unsloth/SmolLM2-360M",
+    "trainable_params": 1085466,
+    "all_params": 361822080,
+    "trainable_percent": 0.0029999993366905636
+  },
+  {
+    "model_name": "unsloth/SmolLM2-360M-Instruct",
+    "trainable_params": 4341760,
+    "all_params": 366163840,
+    "trainable_percent": 1.1857
+  },
+  {
+    "model_name": "EleutherAI/pythia-410m-deduped",
+    "trainable_params": 3145728,
+    "all_params": 408479744,
+    "trainable_percent": 0.7701
+  },
+  {
+    "model_name": "Qwen/Qwen1.5-0.5B-Chat",
+    "trainable_params": 3784704,
+    "all_params": 467772416,
+    "trainable_percent": 0.8091
+  },
+  {
+    "model_name": "Qwen/Qwen2-0.5B",
+    "trainable_params": 1482098,
+    "all_params": 494032768,
+    "trainable_percent": 0.0029999993846562016
+  },
+  {
+    "model_name": "unsloth/Qwen2.5-0.5B",
+    "trainable_params": 1482098,
+    "all_params": 494032768,
+    "trainable_percent": 0.0029999993846562016
+  },
+  {
+    "model_name": "Qwen/Qwen2-0.5B-Instruct",
+    "trainable_params": 1482098,
+    "all_params": 494032768,
+    "trainable_percent": 0.0029999993846562016
+  },
+  {
+    "model_name": "Qwen/Qwen2.5-0.5B",
+    "trainable_params": 1482098,
+    "all_params": 494032768,
+    "trainable_percent": 0.0029999993846562016
+  },
+  {
+    "model_name": "unsloth/Qwen2-0.5B",
+    "trainable_params": 4399104,
+    "all_params": 498431872,
+    "trainable_percent": 0.8826
+  },
+  {
+    "model_name": "unsloth/Qwen2-0.5B-Instruct",
+    "trainable_params": 4399104,
+    "all_params": 498431872,
+    "trainable_percent": 0.8826
+  },
+  {
+    "model_name": "Qwen/Qwen2.5-0.5B-Instruct",
+    "trainable_params": 4399104,
+    "all_params": 498431872,
+    "trainable_percent": 0.8826
+  },
+  {
+    "model_name": "unsloth/Qwen2.5-0.5B-Instruct",
+    "trainable_params": 17596416,
+    "all_params": 511629184,
+    "trainable_percent": 3.4393
+  },
+  {
+    "model_name": "bigscience/bloom-560m",
+    "trainable_params": 3145728,
+    "all_params": 562360320,
+    "trainable_percent": 0.5594
+  },
+  {
+    "model_name": "bigscience/bloomz-560m",
+    "trainable_params": 3145728,
+    "all_params": 562360320,
+    "trainable_percent": 0.5594
+  },
+  {
+    "model_name": "Qwen/Qwen3-0.6B-Base",
+    "trainable_params": 5046272,
+    "all_params": 601096192,
+    "trainable_percent": 0.8395
+  },
+  {
+    "model_name": "unsloth/tinyllama",
+    "trainable_params": 3103537,
+    "all_params": 1034512384,
+    "trainable_percent": 0.0029999998530708745
+  },
+  {
+    "model_name": "TinyLlama/TinyLlama_v1.1",
+    "trainable_params": 6307840,
+    "all_params": 1106356224,
+    "trainable_percent": 0.5701
+  },
+  {
+    "model_name": "unsloth/tinyllama-chat",
+    "trainable_params": 6307840,
+    "all_params": 1106356224,
+    "trainable_percent": 0.5701
+  },
+  {
+    "model_name": "TinyLlama/TinyLlama-1.1B-Chat-v0.6",
+    "trainable_params": 6307840,
+    "all_params": 1106356224,
+    "trainable_percent": 0.5701
+  },
+  {
+    "model_name": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "trainable_params": 6307840,
+    "all_params": 1106356224,
+    "trainable_percent": 0.5701
+  },
+  {
+    "model_name": "samoline/e8a75ed8-5c0f-49d3-a69f-dc924b300216",
+    "trainable_params": 6029312,
+    "all_params": 1210910720,
+    "trainable_percent": 0.4979
+  },
+  {
+    "model_name": "samoline/dddc877c-5266-4bf9-8e4d-8d149728d89a",
+    "trainable_params": 6029312,
+    "all_params": 1210910720,
+    "trainable_percent": 0.4979
+  },
+  {
+    "model_name": "samoline/5edd5c77-e2b9-4371-aaab-484ce81a3a20",
+    "trainable_params": 6029312,
+    "all_params": 1210910720,
+    "trainable_percent": 0.4979
+  },
+  {
+    "model_name": "samoline/a66d1835-13e7-44b8-a36f-99914e7cd5e0",
+    "trainable_params": 6029312,
+    "all_params": 1210910720,
+    "trainable_percent": 0.4979
+  },
+  {
+    "model_name": "samoline/84007b90-1414-4196-b0d9-85c32cf6e769",
+    "trainable_params": 6029312,
+    "all_params": 1210910720,
+    "trainable_percent": 0.4979
+  },
+  {
+    "model_name": "samoline/f4de2fd0-2a02-4110-9264-4a6d245ab9f1",
+    "trainable_params": 6029312,
+    "all_params": 1210910720,
+    "trainable_percent": 0.4979
+  },
+  {
+    "model_name": "samoline/b16cf9d9-92f7-4dac-80bb-e8ed01042118",
+    "trainable_params": 6029312,
+    "all_params": 1210910720,
+    "trainable_percent": 0.4979
+  },
+  {
+    "model_name": "samoline/71d2264d-4707-4b39-985e-8280c0f4687e",
+    "trainable_params": 6029312,
+    "all_params": 1210910720,
+    "trainable_percent": 0.4979
+  },
+  {
+    "model_name": "samoline/33bcb91f-d9e3-4d66-8e0b-3ad48d9724ba",
+    "trainable_params": 6029312,
+    "all_params": 1210910720,
+    "trainable_percent": 0.4979
+  },
+  {
+    "model_name": "samoline/edc71001-1db0-48d8-bf31-7a35c38ef311",
+    "trainable_params": 6029312,
+    "all_params": 1210910720,
+    "trainable_percent": 0.4979
+  },
+  {
+    "model_name": "samoline/38ce2c07-9346-4e62-8f02-9501fb9c6038",
+    "trainable_params": 6029312,
+    "all_params": 1210910720,
+    "trainable_percent": 0.4979
+  },
+  {
+    "model_name": "samoline/8edad6f3-d63e-4ddc-84e8-e22def711514",
+    "trainable_params": 6029312,
+    "all_params": 1210910720,
+    "trainable_percent": 0.4979
+  },
+  {
+    "model_name": "samoline/4c3703c0-08db-4300-bbe1-12accec86e5e",
+    "trainable_params": 6029312,
+    "all_params": 1210910720,
+    "trainable_percent": 0.4979
+  },
+  {
+    "model_name": "samoline/9348151f-2c16-46b3-967f-55ac009786e3",
+    "trainable_params": 6029312,
+    "all_params": 1210910720,
+    "trainable_percent": 0.4979
+  },
+  {
+    "model_name": "samoline/ece091d0-1dfb-4130-9fbc-816e87fad85e",
+    "trainable_params": 6029312,
+    "all_params": 1210910720,
+    "trainable_percent": 0.4979
+  },
+  {
+    "model_name": "samoline/f765eff3-cac7-430f-a325-e9583f7b504b",
+    "trainable_params": 24117248,
+    "all_params": 1228998656,
+    "trainable_percent": 1.9623
+  },
+  {
+    "model_name": "unsloth/Llama-3.2-1B",
+    "trainable_params": 3707443,
+    "all_params": 1235814400,
+    "trainable_percent": 0.0029999998381634004
+  },
+  {
+    "model_name": "samoline/2d8c7998-e6ce-4930-9870-c7cc0a5639a6",
+    "trainable_params": 5636096,
+    "all_params": 1241450496,
+    "trainable_percent": 0.454
+  },
+  {
+    "model_name": "samoline/833b4827-ce53-4948-a50d-9fc0f7f9c1a6",
+    "trainable_params": 5636096,
+    "all_params": 1241450496,
+    "trainable_percent": 0.454
+  },
+  {
+    "model_name": "samoline/99223f4c-acc7-4eb3-a4c2-b89f7f311a25",
+    "trainable_params": 5636096,
+    "all_params": 1241450496,
+    "trainable_percent": 0.454
+  },
+  {
+    "model_name": "samoline/7c265307-7e3f-4fe2-94e8-9bcf9b302310",
+    "trainable_params": 5636096,
+    "all_params": 1241450496,
+    "trainable_percent": 0.454
+  },
+  {
+    "model_name": "samoline/f51fe9fd-2210-4f3e-a2b2-ce959436d60f",
+    "trainable_params": 5636096,
+    "all_params": 1241450496,
+    "trainable_percent": 0.454
+  },
+  {
+    "model_name": "samoline/70ac38b9-6567-4610-b9da-8a350a8d2332",
+    "trainable_params": 5636096,
+    "all_params": 1241450496,
+    "trainable_percent": 0.454
+  },
+  {
+    "model_name": "samoline/c6570ab1-6c94-4d57-9e33-c58c8d76c5ee",
+    "trainable_params": 5636096,
+    "all_params": 1241450496,
+    "trainable_percent": 0.454
+  },
+  {
+    "model_name": "samoline/280f6729-e46f-42bb-a799-33d76883a112",
+    "trainable_params": 5636096,
+    "all_params": 1241450496,
+    "trainable_percent": 0.454
+  },
+  {
+    "model_name": "NousResearch/Llama-3.2-1B",
+    "trainable_params": 5636096,
+    "all_params": 1241450496,
+    "trainable_percent": 0.454
+  },
+  {
+    "model_name": "samoline/99100a52-e2e7-4972-906d-53fbc6d0a236",
+    "trainable_params": 5636096,
+    "all_params": 1241450496,
+    "trainable_percent": 0.454
+  },
+  {
+    "model_name": "samoline/24692433-95d3-4bc4-a500-caafa949d682",
+    "trainable_params": 5636096,
+    "all_params": 1241450496,
+    "trainable_percent": 0.454
+  },
+  {
+    "model_name": "unsloth/Llama-3.2-1B-Instruct",
+    "trainable_params": 5636096,
+    "all_params": 1241450496,
+    "trainable_percent": 0.454
+  },
+  {
+    "model_name": "samoline/6cbdebf8-368f-4553-8057-b51e9ba57a2b",
+    "trainable_params": 5636096,
+    "all_params": 1241450496,
+    "trainable_percent": 0.454
+  },
+  {
+    "model_name": "samoline/e4b9359c-dc8e-432d-8196-1aeac1a57eaf",
+    "trainable_params": 5636096,
+    "all_params": 1241450496,
+    "trainable_percent": 0.454
+  },
+  {
+    "model_name": "samoline/a20af21f-bd5a-4543-9163-45959232a995",
+    "trainable_params": 5636096,
+    "all_params": 1241450496,
+    "trainable_percent": 0.454
+  },
+  {
+    "model_name": "samoline/59a2f6c0-e750-406f-bd9a-9f1c81bd29b1",
+    "trainable_params": 5636096,
+    "all_params": 1241450496,
+    "trainable_percent": 0.454
+  },
+  {
+    "model_name": "samoline/7fdfef80-187a-4abd-99ba-0d52a60f97ec",
+    "trainable_params": 5636096,
+    "all_params": 1241450496,
+    "trainable_percent": 0.454
+  },
+  {
+    "model_name": "samoline/bcaa5506-ab88-4477-9b4d-c9ef5e5ed271",
+    "trainable_params": 22544384,
+    "all_params": 1258358784,
+    "trainable_percent": 1.7916
+  },
+  {
+    "model_name": "princeton-nlp/Sheared-LLaMA-1.3B",
+    "trainable_params": 3839662,
+    "all_params": 1279887360,
+    "trainable_percent": 0.0029999999374944997
+  },
+  {
+    "model_name": "EleutherAI/gpt-neo-1.3B",
+    "trainable_params": 7077888,
+    "all_params": 1322653696,
+    "trainable_percent": 0.5351
+  },
+  {
+    "model_name": "facebook/opt-1.3b",
+    "trainable_params": 7077888,
+    "all_params": 1322835968,
+    "trainable_percent": 0.5351
+  },
+  {
+    "model_name": "tiiuae/falcon-rw-1b",
+    "trainable_params": 25165824,
+    "all_params": 1336791040,
+    "trainable_percent": 1.8826
+  },
+  {
+    "model_name": "microsoft/phi-1_5",
+    "trainable_params": 7077888,
+    "all_params": 1425348608,
+    "trainable_percent": 0.4966
+  },
+  {
+    "model_name": "unsloth/Qwen2-1.5B-Instruct",
+    "trainable_params": 4631142,
+    "all_params": 1543714304,
+    "trainable_percent": 0.0029999994092171087
+  },
+  {
+    "model_name": "unsloth/Qwen2.5-1.5B",
+    "trainable_params": 4631142,
+    "all_params": 1543714304,
+    "trainable_percent": 0.0029999994092171087
+  },
+  {
+    "model_name": "unsloth/Qwen2.5-Math-1.5B",
+    "trainable_params": 9232384,
+    "all_params": 1552946688,
+    "trainable_percent": 0.5945
+  },
+  {
+    "model_name": "unsloth/Qwen2.5-Coder-1.5B-Instruct",
+    "trainable_params": 9232384,
+    "all_params": 1552946688,
+    "trainable_percent": 0.5945
+  },
+  {
+    "model_name": "unsloth/Qwen2.5-Math-1.5B-Instruct",
+    "trainable_params": 9232384,
+    "all_params": 1552946688,
+    "trainable_percent": 0.5945
+  },
+  {
+    "model_name": "Qwen/Qwen2.5-1.5B",
+    "trainable_params": 9232384,
+    "all_params": 1552946688,
+    "trainable_percent": 0.5945
+  },
+  {
+    "model_name": "unsloth/Qwen2.5-1.5B-Instruct",
+    "trainable_params": 9232384,
+    "all_params": 1552946688,
+    "trainable_percent": 0.5945
+  },
+  {
+    "model_name": "Qwen/Qwen2-1.5B-Instruct",
+    "trainable_params": 9232384,
+    "all_params": 1552946688,
+    "trainable_percent": 0.5945
+  },
+  {
+    "model_name": "unsloth/Qwen2-1.5B",
+    "trainable_params": 9232384,
+    "all_params": 1552946688,
+    "trainable_percent": 0.5945
+  },
+  {
+    "model_name": "Qwen/Qwen2.5-1.5B-Instruct",
+    "trainable_params": 9232384,
+    "all_params": 1552946688,
+    "trainable_percent": 0.5945
+  },
+  {
+    "model_name": "unsloth/SmolLM-1.7B",
+    "trainable_params": 9043968,
+    "all_params": 1720420352,
+    "trainable_percent": 0.5257
+  },
+  {
+    "model_name": "unsloth/SmolLM-1.7B-Instruct",
+    "trainable_params": 9043968,
+    "all_params": 1720420352,
+    "trainable_percent": 0.5257
+  },
+  {
+    "model_name": "unsloth/SmolLM2-1.7B",
+    "trainable_params": 9043968,
+    "all_params": 1720422400,
+    "trainable_percent": 0.5257
+  },
+  {
+    "model_name": "Qwen/Qwen3-1.7B-Base",
+    "trainable_params": 8716288,
+    "all_params": 1729291264,
+    "trainable_percent": 0.504
+  },
+  {
+    "model_name": "unsloth/SmolLM2-1.7B-Instruct",
+    "trainable_params": 36175872,
+    "all_params": 1747554304,
+    "trainable_percent": 2.0701
+  },
+  {
+    "model_name": "dunzhang/stella_en_1.5B_v5",
+    "trainable_params": 9232384,
+    "all_params": 1785429504,
+    "trainable_percent": 0.5171
+  },
+  {
+    "model_name": "unsloth/codegemma-2b",
+    "trainable_params": 9805824,
+    "all_params": 2515978240,
+    "trainable_percent": 0.3897
+  },
+  {
+    "model_name": "unsloth/gemma-1.1-2b-it",
+    "trainable_params": 39223296,
+    "all_params": 2545395712,
+    "trainable_percent": 1.541
+  },
+  {
+    "model_name": "unsloth/gemma-2-2b",
+    "trainable_params": 7843025,
+    "all_params": 2614341888,
+    "trainable_percent": 0.0029999997460163864
+  },
+  {
+    "model_name": "zake7749/gemma-2-2b-it-chinese-kyara-dpo",
+    "trainable_params": 10383360,
+    "all_params": 2624725248,
+    "trainable_percent": 0.3956
+  },
+  {
+    "model_name": "databricks/dolly-v2-3b",
+    "trainable_params": 7939107,
+    "all_params": 2646369280,
+    "trainable_percent": 0.0029999996825839817
+  },
+  {
+    "model_name": "unsloth/gemma-2-2b-it",
+    "trainable_params": 41533440,
+    "all_params": 2655875328,
+    "trainable_percent": 1.5638
+  },
+  {
+    "model_name": "microsoft/phi-2",
+    "trainable_params": 47185920,
+    "all_params": 2826869760,
+    "trainable_percent": 1.6692
+  },
+  {
+    "model_name": "bigcode/starcoder2-3b",
+    "trainable_params": 47677440,
+    "all_params": 3078048768,
+    "trainable_percent": 1.549
+  },
+  {
+    "model_name": "unsloth/Qwen2.5-3B",
+    "trainable_params": 14966784,
+    "all_params": 3100905472,
+    "trainable_percent": 0.4827
+  },
+  {
+    "model_name": "Qwen/Qwen2.5-3B",
+    "trainable_params": 14966784,
+    "all_params": 3100905472,
+    "trainable_percent": 0.4827
+  },
+  {
+    "model_name": "Qwen/Qwen2.5-3B-Instruct",
+    "trainable_params": 59867136,
+    "all_params": 3145805824,
+    "trainable_percent": 1.9031
+  },
+  {
+    "model_name": "unsloth/Llama-3.2-3B",
+    "trainable_params": 12156928,
+    "all_params": 3224906752,
+    "trainable_percent": 0.377
+  },
+  {
+    "model_name": "unsloth/Llama-3.2-3B-Instruct",
+    "trainable_params": 48627712,
+    "all_params": 3261377536,
+    "trainable_percent": 1.491
+  },
+  {
+    "model_name": "heegyu/WizardVicuna-open-llama-3b-v2",
+    "trainable_params": 9972220,
+    "all_params": 3324073600,
+    "trainable_percent": 0.002999999759331442
+  },
+  {
+    "model_name": "openlm-research/open_llama_3b",
+    "trainable_params": 12712960,
+    "all_params": 3439186560,
+    "trainable_percent": 0.3697
+  },
+  {
+    "model_name": "numind/NuExtract-v1.5",
+    "trainable_params": 11167736,
+    "all_params": 3722578944,
+    "trainable_percent": 0.0029999997764990315
+  },
+  {
+    "model_name": "microsoft/Phi-3-mini-128k-instruct",
+    "trainable_params": 11167736,
+    "all_params": 3722578944,
+    "trainable_percent": 0.0029999997764990315
+  },
+  {
+    "model_name": "microsoft/Phi-3-mini-4k-instruct",
+    "trainable_params": 12582912,
+    "all_params": 3833662464,
+    "trainable_percent": 0.3282
+  },
+  {
+    "model_name": "microsoft/Phi-3.5-mini-instruct",
+    "trainable_params": 12582912,
+    "all_params": 3833662464,
+    "trainable_percent": 0.3282
+  },
+  {
+    "model_name": "unsloth/Phi-3.5-mini-instruct",
+    "trainable_params": 59768832,
+    "all_params": 3880848384,
+    "trainable_percent": 1.5401
+  },
+  {
+    "model_name": "unsloth/Phi-3-mini-4k-instruct",
+    "trainable_params": 59768832,
+    "all_params": 3880848384,
+    "trainable_percent": 1.5401
+  },
+  {
+    "model_name": "Qwen/Qwen3-4B-Base",
+    "trainable_params": 16515072,
+    "all_params": 4038983168,
+    "trainable_percent": 0.4089
+  },
+  {
+    "model_name": "Qwen/Qwen3-4B",
+    "trainable_params": 66060288,
+    "all_params": 4088528384,
+    "trainable_percent": 1.6157
+  },
+  {
+    "model_name": "furiosa-ai/mlperf-gpt-j-6b",
+    "trainable_params": 16515072,
+    "all_params": 6067406049,
+    "trainable_percent": 0.2722
+  },
+  {
+    "model_name": "NousResearch/Yarn-Llama-2-7b-128k",
+    "trainable_params": 19822030,
+    "all_params": 6607343616,
+    "trainable_percent": 0.002999999871657954
+  },
+  {
+    "model_name": "NousResearch/CodeLlama-7b-hf-flash",
+    "trainable_params": 19822227,
+    "all_params": 6607409152,
+    "trainable_percent": 0.0029999999309865653
+  },
+  {
+    "model_name": "lmsys/vicuna-7b-v1.5",
+    "trainable_params": 19988480,
+    "all_params": 6758404096,
+    "trainable_percent": 0.2958
+  },
+  {
+    "model_name": "lmsys/vicuna-7b-v1.3",
+    "trainable_params": 19988480,
+    "all_params": 6758404096,
+    "trainable_percent": 0.2958
+  },
+  {
+    "model_name": "huggyllama/llama-7b",
+    "trainable_params": 19988480,
+    "all_params": 6758404096,
+    "trainable_percent": 0.2958
+  },
+  {
+    "model_name": "NousResearch/Yarn-Llama-2-7b-64k",
+    "trainable_params": 19988480,
+    "all_params": 6758404096,
+    "trainable_percent": 0.2958
+  },
+  {
+    "model_name": "unsloth/llama-2-7b",
+    "trainable_params": 19988480,
+    "all_params": 6758404096,
+    "trainable_percent": 0.2958
+  },
+  {
+    "model_name": "NousResearch/Nous-Capybara-7B-V1",
+    "trainable_params": 19988480,
+    "all_params": 6758412288,
+    "trainable_percent": 0.2958
+  },
+  {
+    "model_name": "codellama/CodeLlama-7b-Instruct-hf",
+    "trainable_params": 19988480,
+    "all_params": 6758535168,
+    "trainable_percent": 0.2958
+  },
+  {
+    "model_name": "unsloth/codellama-7b",
+    "trainable_params": 19988480,
+    "all_params": 6758535168,
+    "trainable_percent": 0.2958
+  },
+  {
+    "model_name": "defog/sqlcoder-7b-2",
+    "trainable_params": 19988480,
+    "all_params": 6758535168,
+    "trainable_percent": 0.2958
+  },
+  {
+    "model_name": "NousResearch/Nous-Hermes-llama-2-7b",
+    "trainable_params": 79953920,
+    "all_params": 6818377728,
+    "trainable_percent": 1.1726
+  },
+  {
+    "model_name": "codellama/CodeLlama-7b-hf",
+    "trainable_params": 79953920,
+    "all_params": 6818500608,
+    "trainable_percent": 1.1726
+  },
+  {
+    "model_name": "deepseek-ai/deepseek-coder-6.7b-instruct",
+    "trainable_params": 79953920,
+    "all_params": 6820466688,
+    "trainable_percent": 1.1723
+  },
+  {
+    "model_name": "The-matt/llama2_ko-7b_distinctive-snowflake-182_1060",
+    "trainable_params": 19988480,
+    "all_params": 6875844608,
+    "trainable_percent": 0.2907
+  },
+  {
+    "model_name": "oopsung/llama2-7b-koNqa-test-v1",
+    "trainable_params": 19988480,
+    "all_params": 6875844608,
+    "trainable_percent": 0.2907
+  },
+  {
+    "model_name": "oopsung/llama2-7b-n-ox-test-v1",
+    "trainable_params": 79953920,
+    "all_params": 6935810048,
+    "trainable_percent": 1.1528
+  },
+  {
+    "model_name": "tiiuae/falcon-7b",
+    "trainable_params": 16318464,
+    "all_params": 6938039168,
+    "trainable_percent": 0.2352
+  },
+  {
+    "model_name": "Korabbit/llama-2-ko-7b",
+    "trainable_params": 79953920,
+    "all_params": 6973722624,
+    "trainable_percent": 1.1465
+  },
+  {
+    "model_name": "Qwen/Qwen2.5-Math-7B-Instruct",
+    "trainable_params": 21211857,
+    "all_params": 7070619136,
+    "trainable_percent": 0.002999999942296425
+  },
+  {
+    "model_name": "Qwen/Qwen2.5-7B",
+    "trainable_params": 21211857,
+    "all_params": 7070619136,
+    "trainable_percent": 0.002999999942296425
+  },
+  {
+    "model_name": "unsloth/Qwen2.5-Coder-7B",
+    "trainable_params": 21211857,
+    "all_params": 7070619136,
+    "trainable_percent": 0.002999999942296425
+  },
+  {
+    "model_name": "MNC-Jihun/Mistral-7B-AO-u0.5-b2-ver0.4",
+    "trainable_params": 21331980,
+    "all_params": 7110660096,
+    "trainable_percent": 0.0029999999594974313
+  },
+  {
+    "model_name": "NousResearch/Genstruct-7B",
+    "trainable_params": 21331992,
+    "all_params": 7110664192,
+    "trainable_percent": 0.002999999918994909
+  },
+  {
+    "model_name": "jhflow/mistral7b-lora-multi-turn-v2",
+    "trainable_params": 21332004,
+    "all_params": 7110668288,
+    "trainable_percent": 0.0029999998784924335
+  },
+  {
+    "model_name": "Artples/L-MChat-7b",
+    "trainable_params": 21332004,
+    "all_params": 7110668288,
+    "trainable_percent": 0.0029999998784924335
+  },
+  {
+    "model_name": "berkeley-nest/Starling-LM-7B-alpha",
+    "trainable_params": 21332004,
+    "all_params": 7110668288,
+    "trainable_percent": 0.0029999998784924335
+  },
+  {
+    "model_name": "NousResearch/Nous-Hermes-2-Mistral-7B-DPO",
+    "trainable_params": 21332004,
+    "all_params": 7110668288,
+    "trainable_percent": 0.0029999998784924335
+  },
+  {
+    "model_name": "lcw99/zephykor-ko-7b-chang",
+    "trainable_params": 21525786,
+    "all_params": 7175262208,
+    "trainable_percent": 0.002999999913034537
+  },
+  {
+    "model_name": "HuggingFaceH4/zephyr-7b-beta",
+    "trainable_params": 20971520,
+    "all_params": 7262703616,
+    "trainable_percent": 0.2888
+  },
+  {
+    "model_name": "unsloth/zephyr-sft",
+    "trainable_params": 20971520,
+    "all_params": 7262703616,
+    "trainable_percent": 0.2888
+  },
+  {
+    "model_name": "Intel/neural-chat-7b-v3-3",
+    "trainable_params": 20971520,
+    "all_params": 7262703616,
+    "trainable_percent": 0.2888
+  },
+  {
+    "model_name": "unsloth/mistral-7b-instruct-v0.2",
+    "trainable_params": 20971520,
+    "all_params": 7262703616,
+    "trainable_percent": 0.2888
+  },
+  {
+    "model_name": "teknium/OpenHermes-2.5-Mistral-7B",
+    "trainable_params": 20971520,
+    "all_params": 7262720000,
+    "trainable_percent": 0.2888
+  },
+  {
+    "model_name": "NousResearch/Hermes-2-Pro-Mistral-7B",
+    "trainable_params": 20971520,
+    "all_params": 7262965760,
+    "trainable_percent": 0.2887
+  },
+  {
+    "model_name": "unsloth/mistral-7b-instruct-v0.3",
+    "trainable_params": 20971520,
+    "all_params": 7268995072,
+    "trainable_percent": 0.2885
+  },
+  {
+    "model_name": "unsloth/mistral-7b-v0.3",
+    "trainable_params": 20971520,
+    "all_params": 7268995072,
+    "trainable_percent": 0.2885
+  },
+  {
+    "model_name": "NousResearch/Nous-Capybara-7B-V1.9",
+    "trainable_params": 83886080,
+    "all_params": 7325618176,
+    "trainable_percent": 1.1451
+  },
+  {
+    "model_name": "unsloth/OpenHermes-2.5-Mistral-7B",
+    "trainable_params": 83886080,
+    "all_params": 7325634560,
+    "trainable_percent": 1.1451
+  },
+  {
+    "model_name": "dltjdgh0928/test_instruction",
+    "trainable_params": 83886080,
+    "all_params": 7325634560,
+    "trainable_percent": 1.1451
+  },
+  {
+    "model_name": "tokyotech-llm/Llama-3-Swallow-8B-v0.1",
+    "trainable_params": 22514774,
+    "all_params": 7504924672,
+    "trainable_percent": 0.0029999999978680665
+  },
+  {
+    "model_name": "NousResearch/Meta-Llama-3-8B",
+    "trainable_params": 22514774,
+    "all_params": 7504924672,
+    "trainable_percent": 0.0029999999978680665
+  },
+  {
+    "model_name": "MLP-KTLim/llama-3-Korean-Bllossom-8B",
+    "trainable_params": 22514774,
+    "all_params": 7504924672,
+    "trainable_percent": 0.0029999999978680665
+  },
+  {
+    "model_name": "scb10x/llama-3-typhoon-v1.5-8b-instruct",
+    "trainable_params": 22514774,
+    "all_params": 7504924672,
+    "trainable_percent": 0.0029999999978680665
+  },
+  {
+    "model_name": "samoline/8790136c-6ea2-4d9c-bb5d-2e08d9c44490",
+    "trainable_params": 22514774,
+    "all_params": 7504924672,
+    "trainable_percent": 0.0029999999978680665
+  },
+  {
+    "model_name": "unsloth/Meta-Llama-3.1-8B-Instruct",
+    "trainable_params": 22514774,
+    "all_params": 7504924672,
+    "trainable_percent": 0.0029999999978680665
+  },
+  {
+    "model_name": "samoline/4483b081-dfd5-41e9-a275-794591396a8a",
+    "trainable_params": 22514774,
+    "all_params": 7504924672,
+    "trainable_percent": 0.0029999999978680665
+  },
+  {
+    "model_name": "samoline/906b3c67-9d06-46c2-9272-c3db3301e300",
+    "trainable_params": 22514774,
+    "all_params": 7504924672,
+    "trainable_percent": 0.0029999999978680665
+  },
+  {
+    "model_name": "johngreendr1/8f479ea7-9146-49f1-a675-9b75b687149f",
+    "trainable_params": 22514774,
+    "all_params": 7504924672,
+    "trainable_percent": 0.0029999999978680665
+  },
+  {
+    "model_name": "samoline/27773371-b238-416f-8f0a-d80f09c3fb8b",
+    "trainable_params": 22514774,
+    "all_params": 7504924672,
+    "trainable_percent": 0.0029999999978680665
+  },
+  {
+    "model_name": "samoline/18696267-a3df-43da-9d58-3f8b01b76be9",
+    "trainable_params": 22514774,
+    "all_params": 7504924672,
+    "trainable_percent": 0.0029999999978680665
+  },
+  {
+    "model_name": "samoline/6a8bca16-ae85-4290-a41b-df1a844e8b79",
+    "trainable_params": 22514774,
+    "all_params": 7504924672,
+    "trainable_percent": 0.0029999999978680665
+  },
+  {
+    "model_name": "samoline/5eb12613-bc1c-44ff-a21c-670082304a49",
+    "trainable_params": 22705216,
+    "all_params": 7568405504,
+    "trainable_percent": 0.0029999999323503477
+  },
+  {
+    "model_name": "samoline/c4a21f96-883f-4d8c-84cc-cae40017a758",
+    "trainable_params": 22705216,
+    "all_params": 7568405504,
+    "trainable_percent": 0.0029999999323503477
+  },
+  {
+    "model_name": "samoline/52200340-7cdd-47b2-9b14-664a3a46dfbe",
+    "trainable_params": 22705216,
+    "all_params": 7568405504,
+    "trainable_percent": 0.0029999999323503477
+  },
+  {
+    "model_name": "samoline/ca31613a-b923-4959-9877-f185f0f4f416",
+    "trainable_params": 22705216,
+    "all_params": 7568405504,
+    "trainable_percent": 0.0029999999323503477
+  },
+  {
+    "model_name": "samoline/0dae3a3b-54a3-4aa7-b1b3-eb084962b551",
+    "trainable_params": 22705216,
+    "all_params": 7568405504,
+    "trainable_percent": 0.0029999999323503477
+  },
+  {
+    "model_name": "samoline/77ac7486-9606-42a1-a847-be5998bb133c",
+    "trainable_params": 22705216,
+    "all_params": 7568405504,
+    "trainable_percent": 0.0029999999323503477
+  },
+  {
+    "model_name": "johngreendr1/a5cbb18d-847f-40ed-bfe4-a52f5387dc9c",
+    "trainable_params": 22705216,
+    "all_params": 7568405504,
+    "trainable_percent": 0.0029999999323503477
+  },
+  {
+    "model_name": "samoline/e50410aa-bce8-4016-b68f-90c9c0ca59cd",
+    "trainable_params": 22705216,
+    "all_params": 7568405504,
+    "trainable_percent": 0.0029999999323503477
+  },
+  {
+    "model_name": "samoline/e9729fda-9a6b-44ee-a717-7afdc47f0da8",
+    "trainable_params": 22705216,
+    "all_params": 7568405504,
+    "trainable_percent": 0.0029999999323503477
+  },
+  {
+    "model_name": "samoline/a709e49c-6137-4ff2-b7e7-152b53308202",
+    "trainable_params": 22705216,
+    "all_params": 7568405504,
+    "trainable_percent": 0.0029999999323503477
+  },
+  {
+    "model_name": "samoline/1dd869f0-ac17-43f1-80f4-98129211c34a",
+    "trainable_params": 22705216,
+    "all_params": 7568405504,
+    "trainable_percent": 0.0029999999323503477
+  },
+  {
+    "model_name": "samoline/7a46c1bc-d0c3-4e07-87fc-f9059b11f828",
+    "trainable_params": 22705216,
+    "all_params": 7568405504,
+    "trainable_percent": 0.0029999999323503477
+  },
+  {
+    "model_name": "samoline/9683f2ea-0878-488b-82dd-3c1b74b0965c",
+    "trainable_params": 22705216,
+    "all_params": 7568405504,
+    "trainable_percent": 0.0029999999323503477
+  },
+  {
+    "model_name": "samoline/97edf49d-a700-4238-8bc6-b983d78ec60b",
+    "trainable_params": 22705216,
+    "all_params": 7568405504,
+    "trainable_percent": 0.0029999999323503477
+  },
+  {
+    "model_name": "samoline/29f84b6e-5f50-4333-8aeb-6a522821bed0",
+    "trainable_params": 22705216,
+    "all_params": 7568405504,
+    "trainable_percent": 0.0029999999323503477
+  },
+  {
+    "model_name": "samoline/302ba657-2b44-4d8a-b141-5d309c31fa90",
+    "trainable_params": 22705216,
+    "all_params": 7568405504,
+    "trainable_percent": 0.0029999999323503477
+  },
+  {
+    "model_name": "samoline/da41701b-dc32-48ed-adf1-d0566c2d1a19",
+    "trainable_params": 22705216,
+    "all_params": 7568405504,
+    "trainable_percent": 0.0029999999323503477
+  },
+  {
+    "model_name": "samoline/097847b5-48d5-412d-9d91-a04b992fc59f",
+    "trainable_params": 22705216,
+    "all_params": 7568405504,
+    "trainable_percent": 0.0029999999323503477
+  },
+  {
+    "model_name": "samoline/f0d3a55d-d08d-4249-868c-a5c8617cf874",
+    "trainable_params": 22705216,
+    "all_params": 7568405504,
+    "trainable_percent": 0.0029999999323503477
+  },
+  {
+    "model_name": "samoline/e310b0a0-82bc-4eed-9b51-bfa6d30a9c7c",
+    "trainable_params": 22705216,
+    "all_params": 7568405504,
+    "trainable_percent": 0.0029999999323503477
+  },
+  {
+    "model_name": "samoline/c0a23ad1-67f7-407d-8245-590d01b4421a",
+    "trainable_params": 22705216,
+    "all_params": 7568405504,
+    "trainable_percent": 0.0029999999323503477
+  },
+  {
+    "model_name": "johngreendr1/24ed5846-1f0d-4859-8fe4-b6aeba658064",
+    "trainable_params": 22705216,
+    "all_params": 7568405504,
+    "trainable_percent": 0.0029999999323503477
+  },
+  {
+    "model_name": "johngreendr1/7ea881e9-6a0d-431b-9018-8e41a2883cbe",
+    "trainable_params": 22705216,
+    "all_params": 7568405504,
+    "trainable_percent": 0.0029999999323503477
+  },
+  {
+    "model_name": "johngreendr1/24ae9605-5177-446d-8a4d-50766e76e497",
+    "trainable_params": 22705216,
+    "all_params": 7568405504,
+    "trainable_percent": 0.0029999999323503477
+  },
+  {
+    "model_name": "johngreendr1/d300e373-bcd7-494e-93e3-a505aaf10d79",
+    "trainable_params": 22705216,
+    "all_params": 7568405504,
+    "trainable_percent": 0.0029999999323503477
+  },
+  {
+    "model_name": "johngreendr1/0b1dd795-09dd-466a-8927-5584b5d7e930",
+    "trainable_params": 22705216,
+    "all_params": 7568405504,
+    "trainable_percent": 0.0029999999323503477
+  },
+  {
+    "model_name": "johngreendr1/ad9f266a-ebb5-432f-bc69-b2265fa551dd",
+    "trainable_params": 22705216,
+    "all_params": 7568405504,
+    "trainable_percent": 0.0029999999323503477
+  },
+  {
+    "model_name": "johngreendr1/06ced1be-e9cd-42a3-8763-85b4d8c7551b",
+    "trainable_params": 22705216,
+    "all_params": 7568405504,
+    "trainable_percent": 0.0029999999323503477
+  },
+  {
+    "model_name": "Qwen/Qwen2.5-Coder-7B-Instruct",
+    "trainable_params": 20185088,
+    "all_params": 7635801600,
+    "trainable_percent": 0.2643
+  },
+  {
+    "model_name": "Qwen/Qwen2-7B-Instruct",
+    "trainable_params": 20185088,
+    "all_params": 7635801600,
+    "trainable_percent": 0.2643
+  },
+  {
+    "model_name": "Qwen/Qwen2.5-7B-Instruct",
+    "trainable_params": 20185088,
+    "all_params": 7635801600,
+    "trainable_percent": 0.2643
+  },
+  {
+    "model_name": "unsloth/Qwen2-7B",
+    "trainable_params": 20185088,
+    "all_params": 7635801600,
+    "trainable_percent": 0.2643
+  },
+  {
+    "model_name": "unsloth/Qwen2-7B-Instruct",
+    "trainable_params": 20185088,
+    "all_params": 7635801600,
+    "trainable_percent": 0.2643
+  },
+  {
+    "model_name": "unsloth/Qwen2.5-Coder-7B-Instruct",
+    "trainable_params": 20185088,
+    "all_params": 7635801600,
+    "trainable_percent": 0.2643
+  },
+  {
+    "model_name": "Vikhrmodels/Vikhr-7B-instruct_0.4",
+    "trainable_params": 20971520,
+    "all_params": 7648538624,
+    "trainable_percent": 0.2742
+  },
+  {
+    "model_name": "Qwen/Qwen1.5-7B",
+    "trainable_params": 19988480,
+    "all_params": 7741313024,
+    "trainable_percent": 0.2582
+  },
+  {
+    "model_name": "samoline/710e2ef0-57bd-4b22-84b5-ff862a5d7f2e",
+    "trainable_params": 20971520,
+    "all_params": 8051232768,
+    "trainable_percent": 0.2605
+  },
+  {
+    "model_name": "unsloth/llama-3-8b-Instruct",
+    "trainable_params": 20971520,
+    "all_params": 8051232768,
+    "trainable_percent": 0.2605
+  },
+  {
+    "model_name": "samoline/bc4041eb-0316-4b5b-b70e-cfca0516e4d8",
+    "trainable_params": 20971520,
+    "all_params": 8051232768,
+    "trainable_percent": 0.2605
+  },
+  {
+    "model_name": "samoline/e757ec24-2a21-427e-a5df-28ebca71d5f5",
+    "trainable_params": 20971520,
+    "all_params": 8051232768,
+    "trainable_percent": 0.2605
+  },
+  {
+    "model_name": "WhiteRabbitNeo/Llama-3-WhiteRabbitNeo-8B-v2.0",
+    "trainable_params": 20971520,
+    "all_params": 8051232768,
+    "trainable_percent": 0.2605
+  },
+  {
+    "model_name": "DeepMount00/Llama-3-8b-Ita",
+    "trainable_params": 20971520,
+    "all_params": 8051232768,
+    "trainable_percent": 0.2605
+  },
+  {
+    "model_name": "samoline/9c3df64b-5d0c-43c2-8966-b6a8a7c09582",
+    "trainable_params": 20971520,
+    "all_params": 8051232768,
+    "trainable_percent": 0.2605
+  },
+  {
+    "model_name": "samoline/98c53cf2-34da-431b-92e4-57bb8539d7f4",
+    "trainable_params": 20971520,
+    "all_params": 8051232768,
+    "trainable_percent": 0.2605
+  },
+  {
+    "model_name": "samoline/3637d3e3-ab9f-49db-8f57-c2e81548171f",
+    "trainable_params": 20971520,
+    "all_params": 8051232768,
+    "trainable_percent": 0.2605
+  },
+  {
+    "model_name": "unsloth/Meta-Llama-3.1-8B",
+    "trainable_params": 20971520,
+    "all_params": 8051232768,
+    "trainable_percent": 0.2605
+  },
+  {
+    "model_name": "samoline/c16a285d-5cd3-4a01-8bcb-ffb957fe7916",
+    "trainable_params": 20971520,
+    "all_params": 8051232768,
+    "trainable_percent": 0.2605
+  },
+  {
+    "model_name": "samoline/0e57c581-a179-4216-81e4-6f7da9a709ae",
+    "trainable_params": 20971520,
+    "all_params": 8051232768,
+    "trainable_percent": 0.2605
+  },
+  {
+    "model_name": "Orenguteng/Llama-3-8B-Lexi-Uncensored",
+    "trainable_params": 20971520,
+    "all_params": 8051232768,
+    "trainable_percent": 0.2605
+  },
+  {
+    "model_name": "unsloth/Llama-3.1-Storm-8B",
+    "trainable_params": 20971520,
+    "all_params": 8051232768,
+    "trainable_percent": 0.2605
+  },
+  {
+    "model_name": "samoline/5bb2e68f-e4ca-4b38-a6ca-181a5c45b212",
+    "trainable_params": 20971520,
+    "all_params": 8051232768,
+    "trainable_percent": 0.2605
+  },
+  {
+    "model_name": "sethuiyer/Medichat-Llama3-8B",
+    "trainable_params": 20971520,
+    "all_params": 8051232768,
+    "trainable_percent": 0.2605
+  },
+  {
+    "model_name": "samoline/bf602fda-7aea-45d0-b671-da4aba99cdd6",
+    "trainable_params": 20971520,
+    "all_params": 8051232768,
+    "trainable_percent": 0.2605
+  },
+  {
+    "model_name": "samoline/3f1cc877-23ef-45ac-9291-e983ba139753",
+    "trainable_params": 20971520,
+    "all_params": 8051232768,
+    "trainable_percent": 0.2605
+  },
+  {
+    "model_name": "NousResearch/Hermes-3-Llama-3.1-8B",
+    "trainable_params": 20971520,
+    "all_params": 8051232768,
+    "trainable_percent": 0.2605
+  },
+  {
+    "model_name": "samoline/3e17a30b-4ed9-4d97-8b83-23330645faca",
+    "trainable_params": 20971520,
+    "all_params": 8051232768,
+    "trainable_percent": 0.2605
+  },
+  {
+    "model_name": "samoline/69663868-e365-43ba-b6c0-cef04404c3ee",
+    "trainable_params": 20971520,
+    "all_params": 8051232768,
+    "trainable_percent": 0.2605
+  },
+  {
+    "model_name": "samoline/d644f81f-1084-489b-9715-09301479052c",
+    "trainable_params": 20971520,
+    "all_params": 8051232768,
+    "trainable_percent": 0.2605
+  },
+  {
+    "model_name": "NousResearch/Hermes-2-Theta-Llama-3-8B",
+    "trainable_params": 20971520,
+    "all_params": 8051240960,
+    "trainable_percent": 0.2605
+  },
+  {
+    "model_name": "NousResearch/Hermes-2-Pro-Llama-3-8B",
+    "trainable_params": 20971520,
+    "all_params": 8051494912,
+    "trainable_percent": 0.2605
+  },
+  {
+    "model_name": "unsloth/llama-3-8b",
+    "trainable_params": 83886080,
+    "all_params": 8114147328,
+    "trainable_percent": 1.0338
+  },
+  {
+    "model_name": "samoline/ae12f8d0-d3e1-47f9-b246-2b86fc2fcac7",
+    "trainable_params": 83886080,
+    "all_params": 8114147328,
+    "trainable_percent": 1.0338
+  },
+  {
+    "model_name": "aisingapore/llama3-8b-cpt-sea-lionv2.1-instruct",
+    "trainable_params": 83886080,
+    "all_params": 8114147328,
+    "trainable_percent": 1.0338
+  },
+  {
+    "model_name": "samoline/5a2042ed-c0e6-4d41-8603-712ecc90f49e",
+    "trainable_params": 83886080,
+    "all_params": 8114147328,
+    "trainable_percent": 1.0338
+  },
+  {
+    "model_name": "Casual-Autopsy/L3-Umbral-Mind-RP-v3.0-8B",
+    "trainable_params": 83886080,
+    "all_params": 8114147328,
+    "trainable_percent": 1.0338
+  },
+  {
+    "model_name": "elyza/Llama-3-ELYZA-JP-8B",
+    "trainable_params": 83886080,
+    "all_params": 8114147328,
+    "trainable_percent": 1.0338
+  },
+  {
+    "model_name": "unsloth/Hermes-3-Llama-3.1-8B",
+    "trainable_params": 83886080,
+    "all_params": 8114147328,
+    "trainable_percent": 1.0338
+  },
+  {
+    "model_name": "NousResearch/Meta-Llama-3-8B-Alternate-Tokenizer",
+    "trainable_params": 83886080,
+    "all_params": 8114147328,
+    "trainable_percent": 1.0338
+  },
+  {
+    "model_name": "jingyeom/seal3.1.6n_7b",
+    "trainable_params": 21823488,
+    "all_params": 8212558848,
+    "trainable_percent": 0.2657
+  },
+  {
+    "model_name": "Qwen/Qwen3-8B-Base",
+    "trainable_params": 21823488,
+    "all_params": 8212558848,
+    "trainable_percent": 0.2657
+  },
+  {
+    "model_name": "Qwen/Qwen3-8B",
+    "trainable_params": 21823488,
+    "all_params": 8212558848,
+    "trainable_percent": 0.2657
+  },
+  {
+    "model_name": "unsloth/codegemma-7b-it",
+    "trainable_params": 25613042,
+    "all_params": 8537680896,
+    "trainable_percent": 0.002999999919416056
+  },
+  {
+    "model_name": "unsloth/codegemma-7b",
+    "trainable_params": 25001984,
+    "all_params": 8562682880,
+    "trainable_percent": 0.292
+  },
+  {
+    "model_name": "unsloth/gemma-7b-it",
+    "trainable_params": 25001984,
+    "all_params": 8562682880,
+    "trainable_percent": 0.292
+  },
+  {
+    "model_name": "01-ai/Yi-1.5-9B-Chat-16K",
+    "trainable_params": 25701789,
+    "all_params": 8567263232,
+    "trainable_percent": 0.0029999999187605214
+  },
+  {
+    "model_name": "unsloth/gemma-2-9b-it",
+    "trainable_params": 27725117,
+    "all_params": 9241705984,
+    "trainable_percent": 0.002999999896988716
+  },
+  {
+    "model_name": "UCLA-AGI/Gemma-2-9B-It-SPPO-Iter2",
+    "trainable_params": 27009024,
+    "all_params": 9268715008,
+    "trainable_percent": 0.2914
+  },
+  {
+    "model_name": "unsloth/gemma-2-9b",
+    "trainable_params": 108036096,
+    "all_params": 9349742080,
+    "trainable_percent": 1.1555
+  },
+  {
+    "model_name": "princeton-nlp/gemma-2-9b-it-SimPO",
+    "trainable_params": 108036096,
+    "all_params": 9349742080,
+    "trainable_percent": 1.1555
+  },
+  {
+    "model_name": "upstage/SOLAR-10.7B-Instruct-v1.0",
+    "trainable_params": 31457280,
+    "all_params": 10762981376,
+    "trainable_percent": 0.2923
+  },
+  {
+    "model_name": "NousResearch/Yarn-Solar-10b-32k",
+    "trainable_params": 31457280,
+    "all_params": 10762981376,
+    "trainable_percent": 0.2923
+  },
+  {
+    "model_name": "NousResearch/Yarn-Solar-10b-64k",
+    "trainable_params": 31457280,
+    "all_params": 10762981376,
+    "trainable_percent": 0.2923
+  },
+  {
+    "model_name": "NousResearch/Nous-Hermes-2-SOLAR-10.7B",
+    "trainable_params": 31457280,
+    "all_params": 10762997760,
+    "trainable_percent": 0.2923
+  },
+  {
+    "model_name": "unsloth/Mistral-Nemo-Base-2407",
+    "trainable_params": 34730081,
+    "all_params": 11576693760,
+    "trainable_percent": 0.0029999999758134745
+  },
+  {
+    "model_name": "OpenAssistant/oasst-sft-4-pythia-12b-epoch-3.5",
+    "trainable_params": 23592960,
+    "all_params": 11865569280,
+    "trainable_percent": 0.1988
+  },
+  {
+    "model_name": "beomi/polyglot-ko-12.8b-safetensors",
+    "trainable_params": 38218782,
+    "all_params": 12739594240,
+    "trainable_percent": 0.0029999999434832864
+  },
+  {
+    "model_name": "heegyu/WizardVicuna2-13b-hf",
+    "trainable_params": 125173760,
+    "all_params": 13141038080,
+    "trainable_percent": 0.9525
+  },
+  {
+    "model_name": "NousResearch/CodeLlama-13b-hf",
+    "trainable_params": 125173760,
+    "all_params": 13141201920,
+    "trainable_percent": 0.9525
+  },
+  {
+    "model_name": "Eurdem/Defne_llama3_2x8B",
+    "trainable_params": 36176384,
+    "all_params": 13703844352,
+    "trainable_percent": 0.264
+  },
+  {
+    "model_name": "unsloth/Phi-3-medium-4k-instruct",
+    "trainable_params": 41388211,
+    "all_params": 13796070400,
+    "trainable_percent": 0.0029999999855031185
+  },
+  {
+    "model_name": "Qwen/Qwen3-14B",
+    "trainable_params": 41971184,
+    "all_params": 13990394880,
+    "trainable_percent": 0.002999999954254329
+  },
+  {
+    "model_name": "unsloth/Qwen2.5-14B-Instruct",
+    "trainable_params": 41974397,
+    "all_params": 13991465984,
+    "trainable_percent": 0.002999999931958524
+  },
+  {
+    "model_name": "Qwen/Qwen3-14B-Base",
+    "trainable_params": 128450560,
+    "all_params": 14896757760,
+    "trainable_percent": 0.8623
+  },
+  {
+    "model_name": "Qwen/Qwen3-32B",
+    "trainable_params": 95952632,
+    "all_params": 31984210944,
+    "trainable_percent": 0.002999999973987165
+  },
+  {
+    "model_name": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+    "trainable_params": 95955926,
+    "all_params": 31985308672,
+    "trainable_percent": 0.0029999999994997704
+  },
+  {
+    "model_name": "NousResearch/Nous-Puffin-70B",
+    "trainable_params": 103546880,
+    "all_params": 69080195072,
+    "trainable_percent": 0.1499
+  },
+  {
+    "model_name": "garage-bAInd/Platypus2-70B-instruct",
+    "trainable_params": 103546880,
+    "all_params": 69080195072,
+    "trainable_percent": 0.1499
+  },
+  {
+    "model_name": "DiscoResearch/DiscoLM-70b",
+    "trainable_params": 103546880,
+    "all_params": 69080719360,
+    "trainable_percent": 0.1499
+  },
+  {
+    "model_name": "THUDM/agentlm-70b",
+    "trainable_params": 103546880,
+    "all_params": 69084389376,
+    "trainable_percent": 0.1499
+  },
+  {
+    "model_name": "KaeriJenti/kaori-70b-v1",
+    "trainable_params": 414187520,
+    "all_params": 69390835712,
+    "trainable_percent": 0.5969
+  },
+  {
+    "model_name": "deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
+    "trainable_params": 103546880,
+    "all_params": 70657253376,
+    "trainable_percent": 0.1465
+  }
+]

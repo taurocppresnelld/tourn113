@@ -1,0 +1,77 @@
+adapter: lora
+base_model: NousResearch/Meta-Llama-3-8B-Instruct
+bf16: false
+bnb_4bit_compute_dtype: float16
+bnb_4bit_quant_type: nf4
+bnb_4bit_use_double_quant: true
+chat_template: llama3
+dataset_prepared_path:
+datasets:
+debug:
+deepspeed:
+early_stopping_patience:
+eval_max_new_tokens: 128
+eval_table_size:
+evals_per_epoch: null
+flash_attention: true
+fp16: true
+fsdp:
+fsdp_config:
+gradient_accumulation_steps: 1
+gradient_checkpointing: true
+group_by_length: false
+hub_model_id:
+hub_repo:
+hub_strategy: checkpoint
+hub_token:
+learning_rate: 0.00005
+load_in_4bit: true
+load_in_8bit: false
+local_rank:
+logging_steps: 10
+lora_alpha: 16
+lora_dropout: 0.05
+lora_fan_in_fan_out: null
+lora_model_dir:
+lora_r: 8
+lora_target_linear: true
+lr_scheduler: cosine
+max_steps: 10
+micro_batch_size: 2
+model_config: {use_cache: false}
+model_type: AutoModelForCausalLM
+num_epochs: 1
+output_dir: miner_id_24
+pad_to_sequence_len: true
+resume_from_checkpoint:
+s2_attention:
+sample_packing: false
+save_steps: 50
+sequence_len: 512
+strict: false
+tf32: false
+tokenizer_type: AutoTokenizer
+train_on_inputs: false
+trainer:
+  remove_unused_columns: false
+trust_remote_code: false
+val_set_size: 0.05
+wandb_entity:
+wandb_mode: online
+wandb_project: Gradients-On-Demand
+wandb_run:
+push_to_hub: true
+model_card: false
+wandb_runid: default
+warmup_steps: 50
+weight_decay: 0.02
+hf_upload_repo_type: model
+hf_upload_public: true
+optimizer: adamw_bnb_8bit
+xformers_attention: null
+gradient_checkpointing_kwargs: {
+  use_reentrant: false
+}
+device_map: cuda  # NOT "auto"
+ddp: true         # okay
+save_strategy: "steps"             # or "epoch"

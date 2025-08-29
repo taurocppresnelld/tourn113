@@ -1,0 +1,92 @@
+adapter: lora
+base_model: deepseek-ai/deepseek-coder-6.7b-instruct
+bf16: true
+chat_template: llama3
+dataloader_num_workers: 12
+dataset_prepared_path: null
+datasets:
+debug: null
+deepspeed: null
+early_stopping_patience: null
+eval_max_new_tokens: 128
+eval_steps: null
+eval_table_size: null
+evals_per_epoch: null
+flash_attention: true
+fp16: false
+fsdp: null
+fsdp_config: null
+gradient_accumulation_steps: 1
+gradient_checkpointing: true
+group_by_length: false
+hub_model_id: 
+hub_repo: null
+hub_strategy: checkpoint
+hub_token: null
+push_to_hub: true
+hub_private_repo: false    # or true if private
+push_every_save: true      # push every checkpoint save
+learning_rate: 0.00005
+load_in_4bit: false
+load_in_8bit: false
+local_rank: null
+logging_steps: null
+lora_alpha: 64
+lora_dropout: 0.05
+lora_fan_in_fan_out: null
+lora_model_dir: null
+lora_r: 32
+lora_target_linear: true
+loraplus_lr_embedding: 1.0e-06
+loraplus_lr_ratio: 16
+lr_scheduler: cosine
+max_grad_norm: 1
+max_steps: 10
+micro_batch_size: 16
+mlflow_experiment_name: 
+model_type: AutoModelForCausalLM
+num_epochs: 200
+optimizer: adamw_bnb_8bit
+output_dir: miner_id_24
+pad_to_sequence_len: true
+resume_from_checkpoint: null
+rl: dpo
+s2_attention: null
+sample_packing: false
+save_steps: 150
+save_total_limit: 1
+saves_per_epoch: 0
+sequence_len: 1024
+strict: false
+tf32: true
+tokenizer_type: AutoTokenizer
+train_on_inputs: false
+trl:
+  beta: 0.1
+  loss_type: dpo
+  max_completion_length: 256
+  num_generations: 2
+  use_vllm: false
+trust_remote_code: false
+val_set_size: 0.0
+wandb_project: Gradients-On-Demand
+wandb_run:
+model_card: false
+warmup_steps: 150
+weight_decay: 0
+xformers_attention: null
+gradient_checkpointing_kwargs: {
+  use_reentrant: false
+}
+device_map: cuda  # NOT "auto"
+ddp: true         # okay
+save_strategy: "steps"             # or "epoch"
+cosine_min_lr_ratio: 0.3
+use_liger: true
+plugins:
+  - axolotl.integrations.liger.LigerPlugin
+liger_rope: true
+liger_rms_norm: true
+liger_glu_activation: true
+liger_layer_norm: true
+liger_fused_linear_cross_entropy: true

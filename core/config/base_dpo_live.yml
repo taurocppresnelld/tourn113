@@ -1,0 +1,49 @@
+adapter: lora
+base_model: microsoft/Phi-3-mini-128k-instruct
+bf16: true
+chat_template: llama3
+datasets:
+eval_max_new_tokens: 256
+evals_per_epoch: null
+flash_attention: false
+fp16: false
+gradient_accumulation_steps: 2
+gradient_checkpointing: true
+group_by_length: false
+learning_rate: 0.00005
+logging_steps: 10
+lora_alpha: 16
+lora_dropout: 0.05
+lora_fan_in_fan_out: null
+lora_r: 8
+lora_target_linear: true
+lr_scheduler: cosine
+max_steps: 10
+micro_batch_size: 8
+model_type: AutoModelForCausalLM
+num_epochs: 3
+optimizer: adamw_bnb_8bit
+output_dir: miner_id_24
+pad_to_sequence_len: true
+sample_packing: false
+save_steps: 50
+sequence_len: 512
+tf32: true
+tokenizer_type: AutoTokenizer
+train_on_inputs: false
+trust_remote_code: false
+val_set_size: 0.05
+wandb_entity:
+wandb_mode: online
+wandb_project: Gradients-On-Demand
+wandb_run:
+push_to_hub: true
+model_card: false
+wandb_runid: default
+warmup_steps: 50
+weight_decay: 0.02
+hf_upload_repo_type: model
+hf_upload_public: true
+dpo_dataset_prepared: true
+model_config: {use_cache: false}
+
